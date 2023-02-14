@@ -13,7 +13,7 @@ search.addEventListener('click', () => {
     if(city === '')
         return;
 
-    fetch(url)
+     fetch(url)
     .then(response => response.json())
     .then(json => {
         console.log(json);
@@ -25,6 +25,7 @@ search.addEventListener('click', () => {
             weatherError.classList.add('fadeIn');
             return;
         }
+        console.log('found');
         weatherError.style.display = 'none';
         weatherError.classList.remove('fadeIn');
 
@@ -59,7 +60,7 @@ search.addEventListener('click', () => {
                 image.src = '';
         }
 
-        temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+        temperature.innerHTML = `${parseInt(json.main.temp)}°C`;
         description.innerHTML = `${json.weather[0].description}`;
         humidity.innerHTML = `${json.main.humidity}%`;
         wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;

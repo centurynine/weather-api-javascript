@@ -96,6 +96,7 @@ body{
     color: rgb(255, 153, 192);
     font-weight: 600;
     margin-top: 20px;
+    position: relative;
 }
 
 .weather-box .temperature span{
@@ -139,7 +140,6 @@ body{
 .weather-details .humidity, .weather-details .wind{
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 50%;
 }
 
@@ -148,9 +148,17 @@ body{
     display: flex-end;
 }
 
+.weather-details .humidity span{
+    padding-left: 25%;
+}
+
 .weather-details .wind{
     padding-right: 10px;
     display: flex-end;
+}
+
+.weather-details .wind span{
+    padding-left: 25%;
 }
 
 /* NOT FOUND */
@@ -177,7 +185,7 @@ body{
 
 .weather-box, .weather-details{
     scale: 0;
-    display: none;
+    opacity: 0;
 }
 
 .fadeIn{
