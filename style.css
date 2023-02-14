@@ -21,7 +21,7 @@ body{
     max-width: 500px; 
     position: relative;
     width: 400px;
-    height: 600px;
+    height: 100px;
     overflow: hidden;
     border-radius: 20px;
     transition: 0.7s ease-out;
@@ -117,6 +117,25 @@ body{
     margin-top: 20px;
 }
 
+.weather-details i{
+    font-size: 20px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.weather-details span{
+    color: rgb(255, 117, 170);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.weather-details p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 3px;
+}
+ 
 .weather-details .humidity, .weather-details .wind{
     display: flex;
     align-items: center;
@@ -124,4 +143,46 @@ body{
     width: 50%;
 }
 
+.weather-details .humidity{
+    padding-left: 10px;
+    display: flex-end;
+}
 
+.weather-details .wind{
+    padding-right: 10px;
+    display: flex-end;
+}
+
+/* NOT FOUND */
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    color: rgb(255, 117, 170);
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.fade-in{
+    animation: 0.7s fadeIn forwards;
+}
+
+@keyframes fadeIn{
+   to {
+       scale: 1;
+       opacity: 1;
+   }
+}
