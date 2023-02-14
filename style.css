@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'kanit', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 206, 224);
+}
+ 
+.container{
+    width: 100%;
+    background-color: white;
+    max-width: 500px; 
+    position: relative;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.7s ease-out;
+    padding: 25px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: rgb(255, 117, 170);
+    width: 70%;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-left: 4vh;
+    margin-right: 2vh;
+    background-color: rgb(255, 236, 243);
+    transition: 0.7s ease-out;
+    height: 50px;
+}
+
+.search-box input::placeholder{
+    color: rgb(255, 153, 192);
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.7s ease-out
+}
+
+.search-box button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 185, 212);
+    border-radius: 50%;
+    transition: 0.7s ease;
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.search-box button:hover{
+    color: rgb(255, 153, 192);
+    background-color: white;
+    border: 2px solid rgb(255, 153, 192);
+}
+
+.search-box i{
+    color: rgb(255, 153, 192);
+    font-size: 30px;
+    transition: 0.7s ease;
+    position: absolute;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.weather-box .temperature{
+    font-size: 3rem;
+    color: rgb(255, 153, 192);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.weather-box .temperature span{
+    margin-left: 2rem;
+    position: absolute;
+}
+
+.weather-box .description{
+    font-size: 1.5rem;
+    color: rgb(255, 153, 192);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.weather-details .humidity, .weather-details .wind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
